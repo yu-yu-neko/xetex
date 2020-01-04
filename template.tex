@@ -1,0 +1,67 @@
+\documentclass[autodetect-engine,dvipdfmx-if-dvi,ja=standard,a4paper,11pt]{bxjsarticle}
+\usepackage{xeCJK}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{listings} %日本語のコメントアウトをする場合jlistingが必要
+%\usepackage{tocloft}
+\usepackage[T1]{fontenc}
+\usepackage{times, times}
+\usepackage[xetex]{graphicx}
+\usepackage{here}
+\usepackage{indentfirst}
+\usepackage{subfigure}
+
+\titleformat{\section}
+	[block]
+	{\normalsize}
+	{\thesection}
+	{0pt}
+	{．}
+	[]
+
+\titleformat{\subsection}
+[block]
+{\normalsize}
+{\thesubsection}
+{0pt}
+{．}
+[]	
+
+\titlespacing{\section}{0pt}{0.5em}{0.5em}
+\titlespacing{\subsection}{0pt}{0.5em}{0.5em}
+\def\shatai#1{\makebox[2.25\zw][l]{\vphantom{#1}\rotatebox{-48.8}{\scalebox{0.875}[1.143]{\rotatebox{41.2}{\smash{\rlap{#1}}}}}}}
+
+\renewcommand{\figurename}{Figure }
+\renewcommand{\tablename}{Table}
+
+\lstset{
+	basicstyle={\ttfamily},
+	identifierstyle={\small},
+	commentstyle={\smallitshape},
+	keywordstyle={\small\bfseries},
+	ndkeywordstyle={\small},
+	stringstyle={\small\ttfamily},
+	frame={tb},
+	breaklines=true,
+	columns=[l]{fullflexible},
+	numbers=left,
+	xrightmargin=0pt,
+	xleftmargin=3pt,
+	numberstyle={\scriptsize},
+	stepnumber=1,
+	numbersep=10pt,
+	lineskip=-0.5pt,
+	tabsize = 2
+}
+
+\setCJKmainfont{IPAMincho}
+\setCJKsansfont{IPAPGothic}
+\setCJKmonofont{IPAGothic}
+\pagestyle{myheadings}
+
+\makeatother
+\title{レポート課題}
+\date{2019 11 12}
+\author{someone}
+\begin{document}
+\end{document}
