@@ -1,2 +1,0 @@
-# xetex
-the xetex templates.
